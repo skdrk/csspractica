@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "FuenteBorja";
+    src: url("/assets/fonts/fuetne.ttf") format("truetype");
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 2rem;
+        margin: 1.5rem;
+    }
+}
+
+body {
+    font-family: FuenteBorja;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: hsl(0, 0%, 80%);
+    font-weight: 400;
+}
+h2 {
+    color: white;
+    margin-bottom: -1rem; /* Espacio entre h2 y h4 */
+    font-weight: 700;
+}
+
+h4 {
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+}
+
+.container {
+    background-color: hsl(0, 0%, 12%);
+    position: absolute;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container img {
+    border-radius: 100%;
+    width: 35%;
+    margin-bottom: 1rem;
+}
+
+.container button {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 5px;
+    border: none;
+    margin: 0.4rem;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+.container button:hover {
+    background-color: hsl(0, 0%, 30%);
+    cursor: pointer;
+}
+
+.container button:active {
+background-color: hsl(75, 94%, 57%);
+color: hsl(0, 0%, 8%);
+}
