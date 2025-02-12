@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "youngserif";
+    src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf") format("ttf");
+}
+
+body {
+    background-color: hsl(30, 18%, 87%);
+    color: hsl(30, 10%, 34%);
+    font-family: youngserif;
+    font-size: 16px;
+}
+
+.container {
+    background-color: white;
+    margin: 3rem 1rem;
+    border-radius: 30px;
+    padding: 1.5rem;
+}
+
+/* Estilos para móviles (cuando la pantalla es de 375px o menor) */
+@media (max-width: 375px) {
+    .container {
+        margin: 3rem 1rem; /* Reducir márgenes para aprovechar mejor la pantalla */
+        padding: 1rem; /* Ajustar el padding para que se vea bien */
+    }
+}
+
+/* Estilos para escritorio grande (1440px o más) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1200px; /* Limitar el ancho para que no se vea demasiado extendido */
+        margin: 3rem auto; /* Centrar el contenido */
+    }
+}
+
+.container img {
+    width: 100%; /* Hace que la imagen se ajuste al ancho del div */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita espacios adicionales debajo de la imagen */
+    border-radius: 8px; /* Opcional: Bordes redondeados */
+    border-radius: 30px;
+}
+
+.container h2 {
+    width: 100%;
+    color: hsl(14, 45%, 36%);
+}
+
+.text-body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 30px;
+    padding: 20px;
+    line-height: 2.2;
+}
+
+.preparation h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+ul li {
+    text-indent: -10px; /* Mueve el texto hacia la izquierda */
+    padding-left: 20px; /* Ajusta el espacio entre el punto y el texto */
+}
+
+hr {
+    border-color: hsl(30, 18%, 87%);
+}
+
+ol li {
+    text-indent: -10px; /* Mueve el texto hacia la izquierda */
+    padding-left: 20px; /* Ajusta el espacio entre el punto y el texto */
+    margin-bottom: 1rem;
+}   
+
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5%;
+}
+table td {
+    border-collapse: collapse;
+    border-bottom: solid 1px;
+    border-color: hsl(30, 18%, 87%);
+    text-align: center;
+}
+
+table tbody tr:last-of-type td {
+    border-bottom: none;
+}
+
+table td strong {
+    color: hsl(14, 45%, 36%);
+}
+
